@@ -5,10 +5,19 @@
 """
 
 
-def calnumset(numrange, versusnum):
-    numset = {num for num in range(1, numrange) if num % versusnum == 0}
-    return numset
+
+def setup(setrange):
+    global g_numrange 
+    g_numrange = setrange
 
 
-def aaa(num1, num2, range):
-    return sum(calnumset(range, num1) | calnumset(range, num2))
+def setnums(versusnum):
+    calnumset = {num for num in range(1, g_numrange) if versusnum == 0}
+    return calnumset
+
+def Andcollections(num1, num2):
+    return sum(setnums(num1) | setnums(num2))
+
+def main(num1, num2, range):
+    setup(range)
+    print(Andcollections(num1, num2))
