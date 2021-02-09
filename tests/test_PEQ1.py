@@ -3,7 +3,10 @@
 
 1000 以下の 3 または 5 のすべての倍数の合計を検索します。
 """
+
+
 from PEQ1 import PEQ1
+
 
 def test_PEQ1_default(capsys):
     PEQ1.aaa(3, 5, 10)
