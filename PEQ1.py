@@ -12,4 +12,3 @@ def calnumset(numrange, versusnum):
 
 def aaa(num1, num2, range):
     return sum(calnumset(range, num1) | calnumset(range, num2))
-
