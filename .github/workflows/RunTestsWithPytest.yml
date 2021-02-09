@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: ${{ matrix.python-version }}
-      # Poetry ‚»‚Ì‚à‚Ì‚ðƒCƒ“ƒXƒg[ƒ‹‚·‚é
+      # Poetry ãã®ã‚‚ã®ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
       - name: Install Poetry
         run: |
           curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
